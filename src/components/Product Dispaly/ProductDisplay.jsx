@@ -23,9 +23,9 @@ const {addToCart ,}= useContext(ShopContext)
           <div className="price-new"><span>₹{product.new_price}</span></div>
           <div className="price-old">₹{product.old_price}</div>
         </div>
-        <div className="description">{product.description}</div>
         
         <button className="addtocart" onClick={()=>{addToCart(product.id)}} >ADD To Cart</button>
+        <div className="description">{product.description}</div>
       </div>
     </div>
   );
