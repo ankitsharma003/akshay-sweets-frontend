@@ -1,5 +1,5 @@
 import React from 'react'
-import carouselimg from '../../assets/carousel_1.png'
+import carouselimg from '../../assets/caroousel.png'
 
 export const Home = () => {
   return (
