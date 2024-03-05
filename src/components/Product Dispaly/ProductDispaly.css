@@ -51,6 +51,7 @@
     margin: 10px 3px; 
     font-size: 18px;
     font-weight: 500;
+    overflow: hidden;
 }
 .right-side .addtocart{
     padding: 20px 40px;
