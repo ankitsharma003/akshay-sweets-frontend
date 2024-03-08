@@ -16,7 +16,6 @@ const ShopContextProvider = (props) => {
   const [cartItem, setcartItem] = useState(GetDefaultCart());
 
   useEffect(() => {
-
     if (localStorage.getItem("auth-token")) {
       fetch("https://akshay-sweets-backend-1.onrender.com/getcart", {
         method: "POST",
@@ -69,14 +68,12 @@ const ShopContextProvider = (props) => {
   };
 
   const getTotalAmount = () => {
-    let totalAmount = 0;
+    let totalamount = 0;
     for (const item in cartItem) {
-      const ItemInfo = All_products.find((product) => product.id === item);
-      if (ItemInfo) {
-        totalAmount += ItemInfo.new_price * cartItem[item];
-      }
+      let ItemInfo = All_products.find((product) => product.id);
+      totalamount += ItemInfo.new_price * cartItem[item];
     }
-    return totalAmount;
+    return totalamount;
   };
 
   const contextValue = {
